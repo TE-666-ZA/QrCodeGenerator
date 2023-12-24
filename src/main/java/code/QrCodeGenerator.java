@@ -15,8 +15,9 @@ import java.util.Map;
 public class QrCodeGenerator {
 
 
-   static void generateQRCodeImage(String text, int width, int height, String filePath) {
+ public static void generateQRCodeImage(String text, int width, int height, String filePath) {
     try {
+
 
       Map<EncodeHintType, Object> hintMap = new HashMap<>();
       hintMap.put(EncodeHintType.CHARACTER_SET, "UTF-8");
